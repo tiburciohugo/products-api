@@ -10,9 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/products', productRoutes);
 
 app.get('/', (req, res) => {
-    res.status(200).send(
-        "<h2 style='text-align: center; font-size: 32px;'>Hello World</h2>"
-    );
+    res.status(200).send("Hey this is my API running 🥳");
     res.end();
 });
 app.listen(PORT, () => {
