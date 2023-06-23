@@ -9,4 +9,6 @@ const db = client.db("ecommerce");
 
 const products = db.collection("Products");
 
-module.exports = { client, products };
+const orders = db.collection("Orders");
+
+module.exports = { client, products, orders };
